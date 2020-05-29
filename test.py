@@ -51,7 +51,6 @@ f=open('/var/www/accuracy.txt','r+')
 f.truncate(0)
 f.close()
 
-
 file=open('accuracy.txt','w')
 file.write(str(ac))
 file.close()
