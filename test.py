@@ -36,11 +36,14 @@ model.compile(
   metrics=['accuracy'],
 )
 
+import sys
+l=int(sys.argv[1])
+
 # Train the model.
 acc=model.fit(
   train_images,
   to_categorical(train_labels),
-  epochs=1,
+  epochs=l,
   validation_data=(test_images, to_categorical(test_labels)),
 )
 ac=int(acc.history['accuracy'][0]*100)
