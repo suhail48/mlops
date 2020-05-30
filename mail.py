@@ -17,7 +17,7 @@ def send_email(subject, msg):
         print("Email failed to send.")
 
 
-subject = "Test subject"
-msg = "Hello there, how are you today?"
+subject = "MLOPS"
+msg = "Hello there, your Deep Learning model has more than 95% efficiency."
 
 send_email(subject, msg)

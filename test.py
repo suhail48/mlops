@@ -58,4 +58,3 @@ print("current accuracy=",ac)
 sys.stdout=open('/var/www/accuracy.txt',"w")
 print(ac)
 sys.stdout.close()
-
