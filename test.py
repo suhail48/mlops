@@ -47,9 +47,15 @@ acc=model.fit(
   validation_data=(test_images, to_categorical(test_labels)),
 )
 ac=int(acc.history['accuracy'][-1]*100)
-f=open('/var/www/accuracy.txt','r+')
-f.truncate(0)
-f.close()
-file=open('accuracy.txt','w')
-file.write(str(ac))
-file.close()
+#f=open('/var/www/accuracy.txt','r+')
+#f.truncate(0)
+#f.close()
+#file=open('accuracy.txt','w')
+#file.write(str(ac))
+#file.close()
+
+print("current accuracy=",ac)
+sys.stdout=open('/var/www/accuracy.txt',"w")
+print(ac)
+sys.stdout.close()
+
