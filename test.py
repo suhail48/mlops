@@ -53,7 +53,7 @@ ac=int(acc.history['accuracy'][-1]*100)
 #file=open('accuracy.txt','w')
 #file.write(str(ac))
 #file.close()
-
+model.summary()
 print("current accuracy=",ac)
 sys.stdout=open('/var/www/accuracy.txt',"w")
 print(ac)
